@@ -1,0 +1,356 @@
+body {
+  margin: 0;
+   font-family: 'poppins', sans-serif;
+    background-image: url('gggg12.jpg');
+  background-size: cover;       /* Makes it fill the screen */
+  background-position: center;  /* Keeps it centered */
+  background-repeat: no-repeat; /* Prevents repeating */
+  height: 100vh;                /* Full screen height */
+ background: linear-gradient(135deg, #110020, #1c1427);
+  color: #F5E9DA;
+ 
+}
+body {
+    margin: 0;
+    min-height: 200vh; /* just for demo scroll */
+
+    background-image: url("gggg12.jpg");
+    background-size: cover;        /* fills width nicely */
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    /* IMPORTANT: this is default, but make sure */
+    background-attachment: scroll;
+}
+@font-face {
+  font-family: 'creato';
+  src: url('fonts/CreatoDisplay-Regular.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+font-face {
+  font-family: 'mono';
+  src: url('fonts/monof55.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'coo';
+  src: url('fonts/Coolvetica Rg.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bodeg';
+  src: url('fonts/Bodeg-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+h2 {
+  font-family: 'mono', sans-serif;
+}
+p {
+  font-family: 'creato', sans-serif;
+   font-size: 18px;
+}
+h3 {
+  font-family: 'mono', sans-serif;
+  font-weight: 100;
+}
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+
+  background: #2f14535b; /* more transparent */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ddc6ff;
+}
+header:hover {
+  background: #31145384;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column; /* stack items */
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+
+  text-align: center;
+
+  min-height: 90vh; /* fills screen */
+  padding: 40px;
+}
+
+/* LEFT SIDE */
+.hero-text {
+  flex: 1;
+}
+.hero-text h2 {
+  font-size: 68px; /* increase or decrease */
+  font-weight: 100;
+  font-family: 'mono', sans-serif;
+}
+/* RIGHT SIDE */
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+
+  /* Better color */
+  background: linear-gradient(135deg, #ffffff, #eaeaea);
+  color: #111;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  /* Depth */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  /* Smooth animation */
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  background: #ffffff;
+}
+
+/* Click */
+.btn:active {
+  transform: scale(0.96);
+}
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  background: rgb(32, 32, 32); /* transparent */
+  backdrop-filter: blur(10px); /* glass blur */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  
+  padding: 20px;
+  width: 250px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+.cards {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* allows responsive wrapping */
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000000;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Container */
+.pricing-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+    background
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: left;
+    position: relative;
+    transition: 0.3s;
+}
+h3 {
+  color: #F5E9DA;
+
+}
+.gold-text {
+    color: #F5E9DA;
+    font-size: small;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Highlight card */
+.highlight {
+    border: 2px solid #000000;
+    transform: scale(1.05);
+}
+
+/* Badge */
+.badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6c63ff;
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+/* Price */
+.price {
+    font-size: 28px;
+    font-weight:bold;
+    margin: 15px 0;
+    color: #F5E9DA;
+}
+
+
+.btn:hover {
+    background: #822cd7;
+    color: white;
+}
+
+/* Features */
+.features {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.hloo{
+  color: #000000;
+   font-family: 'creato', sans-serif;
+   font-weight: bold;
+   font-size: 18px;
+}
+.cta-card {
+  width: 900px;
+  padding: 60px 40px;
+  text-align: center;
+  border-radius: 20px;
+
+  /* Gradient background */
+  background-image: url('080808.jpg');
+   background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  /* Soft glow effect */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+
+  color: white;
+}
+
+/* Heading */
+.cta-card h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+
+/* Small text */
+.cta-card p {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+body {
+  background: #101010;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cta-card {
+  width: 900px;
+  margin: 0 auto;  /* centers horizontally */
+  padding-bottom: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+    margin-bottom: 80px; /* increase this value as needed */
+}
+.cta-btn {
+  background: #fff;
+  color: #111;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+
+  box-shadow: 0 0 10px #a855f7, 0 0 20px #f97316;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  box-shadow: 0 0 20px #a855f7, 0 0 40px #f97316;
+  transform: scale(1.05);
+}
+.ded {
+ font-family: 'mono', sans-serif; 
+}
